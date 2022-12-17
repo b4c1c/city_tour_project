@@ -1,0 +1,267 @@
+
+html{
+    scroll-behavior: smooth
+}
+
+/* 
+====================
+Custom variables
+====================
+*/
+
+:root{
+    
+    /* font-family --> ff*/
+    --ff-primary: 'Roboto Mono', monospace, sans-serif, serif;
+    --ff-secondary: 'Covered By Your Grace', cursive, sans-serif, serif;
+    
+    /* font-weight --> fw*/
+    --fw-regular: 300;
+    --fw-bold: 900;
+
+    /* color --> clr*/
+    --clr-dark: rgb(9, 21, 58);
+    --clr-light: rgb(220, 240, 39);
+    --clr-light-gray: rgb(214, 213, 213); 
+    --clr-accent: #5d9f94; 
+
+    /* font-size */
+    --font-size-h1: 4.5rem;
+    --font-size-h2: 2.5rem;
+    --font-size-body: 1.1rem;
+}
+
+
+
+/*
+================
+General styles
+================
+*/
+body{
+    background: var(--clr-light-gray);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--font-size-body);
+    line-height: 1.6;
+}
+
+section{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+img{
+    display: block;
+    margin: auto 0;
+    max-width: 100%;
+    border: 0.25rem solid var(--clr-dark);
+}
+
+a{
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+/*
+================
+Typograpy
+================
+*/
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    font-family: var(--ff-secondary);
+    margin-top: 4rem;
+    text-align: center;
+}
+
+h1 {font-size: var(--font-size-h1);}
+h2 {font-size: var(--font-size-h2);}
+
+/*
+================
+Dark Mode
+================
+*/
+
+.dark-mode{
+    background-color: var(--clr-dark);
+    color: var(--clr-light-gray);
+}
+
+
+
+/*
+================
+Navigation section
+================
+*/
+
+
+.nav-links{
+    list-style: none;
+    display: flex; 
+
+}
+
+
+.nav-links li{
+    padding: 0.7rem;
+    letter-spacing: -0.09rem;
+    text-decoration: underline ;
+    /* transition: width 1s, height 1s, background-color 1s, transform .5s; */
+    
+}
+
+.nav-links li:hover{
+    background: var(--clr-accent);
+    text-transform: uppercase;   
+}
+
+
+
+/*
+===============
+Welcome image
+===============
+*/
+
+header{
+    position: relative;
+    text-align: center;
+}
+
+.header-img{
+    border-top: 0.3rem solid var(--clr-dark); 
+    border-bottom: 0.3rem solid var(--clr-dark);
+    border-right: none;
+    border-left: none;
+}
+
+header div img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.welcome-h1{
+    font-weight: var(--fw-regular); 
+}
+
+.welcome-h3{
+    font-size: 2rem;
+}
+
+/*
+===============
+About section
+===============
+*/
+
+#about{
+    display: block;
+    text-align: center;
+}
+
+/* 
+===============
+Dive Section
+===============
+*/
+#dive{
+    overflow: hidden;
+}
+
+.dive-img{
+    max-width: 35%;
+    display: block;
+    margin: 2rem;
+    float: right;
+}
+
+.dive-p{
+    text-align: justify;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* 
+===================
+Go Further section
+===================
+*/
+
+.go-img{
+    max-width: 45%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 
+===================
+Go Further section
+===================
+*/
+footer{
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+footer p a{
+    text-decoration: line-through;
+}
+footer p a:hover{
+    color: var(--clr-accent);
+}
+
+
+
+/* 
+===================
+Responsive screen 
+===================
+*/
+    
+    /* Extra large screen and TVs */
+
+@media (min-width: 1201px) {
+    html {
+      font-size: 18px;
+    }
+  }
+  
+  /*Destktop screen*/
+
+@media (max-width: 1200px){
+    html {
+        font-size: 16px;
+    }
+} 
+
+ /*Small screen, laptop*/
+
+ @media (max-width: 1024px){
+    html {
+        font-size: 15px;
+    }
+}
+
+   /* Tablet screen  */
+  
+@media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  /* Mobile screen */
+  
+@media (max-width: 480px) {
+    html {
+      font-size: 12px;
+    }
+  }
