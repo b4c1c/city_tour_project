@@ -101,24 +101,37 @@ Navigation section
 ================
 */
 
+#icon{
+    width: 1.3rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    text-align: right;
+}
 
 .nav-links{
     list-style: none;
-    display: flex; 
+    /* display: flex;  */
 
 }
 
+nav a{
+    color: inherit;
+}
 
 .nav-links li{
     padding: 0.7rem;
     letter-spacing: -0.09rem;
     text-decoration: underline ;
     /* transition: width 1s, height 1s, background-color 1s, transform .5s; */
-    
 }
 
 .nav-links li:hover{
-    background: var(--clr-accent);
+    /* background: var(--clr-accent); */
     text-transform: uppercase;   
 }
 
