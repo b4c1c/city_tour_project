@@ -15,10 +15,3 @@ icon.onclick = function(){
     }
 }
 
-
-
-// function darkModeFunction(){
-//     let element = document.body;
-//     element.classList.toggle("dark-mode");
-// }
-

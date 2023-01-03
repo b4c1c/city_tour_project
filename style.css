@@ -106,10 +106,11 @@ Navigation section
 }
 
 #icon{
-    width: 1.3rem;
+    width: 1.8rem;
     cursor: pointer;
-    position: fixed;
     z-index: 1;
+    border-radius: 2rem;
+    border-color: var(--clr-dark);
 }
 
 nav ul{
@@ -119,7 +120,7 @@ nav ul{
 
 .nav-links{
     list-style: none;
-    /* display: flex;  */
+    
 
 }
 
